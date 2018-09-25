@@ -1,45 +1,45 @@
 [submodule "tn3270-ng2"]
 	path = tn3270-ng2
-	url = git@github.com:zowe/tn3270-ng2.git
+	url = git@github.com:1000TurquoisePogs/tn3270-ng2.git
 [submodule "zos-subsystems"]
 	path = zos-subsystems
-	url = git@github.com:zowe/zos-subsystems.git
+	url = git@github.com:1000TurquoisePogs/zos-subsystems.git
 [submodule "zlux-app-manager"]
 	path = zlux-app-manager
-	url = git@github.com:zowe/zlux-app-manager.git
+	url = git@github.com:1000TurquoisePogs/zlux-app-manager.git
 [submodule "zlux-ng2"]
 	path = zlux-ng2
-	url = git@github.com:zowe/zlux-ng2.git
+	url = git@github.com:1000TurquoisePogs/zlux-ng2.git
 [submodule "zlux-platform"]
 	path = zlux-platform
-	url = git@github.com:zowe/zlux-platform.git
+	url = git@github.com:1000TurquoisePogs/zlux-platform.git
 [submodule "zlux-shared"]
 	path = zlux-shared
-	url = git@github.com:zowe/zlux-shared.git
+	url = git@github.com:1000TurquoisePogs/zlux-shared.git
 [submodule "zlux-build"]
 	path = zlux-build
-	url = git@github.com:zowe/zlux-build.git
+	url = git@github.com:1000TurquoisePogs/zlux-build.git
 [submodule "vt-ng2"]
 	path = vt-ng2
-	url = git@github.com:zowe/vt-ng2.git
+	url = git@github.com:1000TurquoisePogs/vt-ng2.git
 [submodule "zosmf-auth"]
 	path = zosmf-auth
-	url = git@github.com:zowe/zosmf-auth.git
+	url = git@github.com:1000TurquoisePogs/zosmf-auth.git
 [submodule "zss-auth"]
 	path = zss-auth
-	url = git@github.com:zowe/zss-auth.git
+	url = git@github.com:1000TurquoisePogs/zss-auth.git
 [submodule "explorer-server-auth"]
 	path = explorer-server-auth
-	url = git@github.com:zowe/explorer-server-auth.git
+	url = git@github.com:1000TurquoisePogs/explorer-server-auth.git
 [submodule "zlux-workflow"]
 	path = zlux-workflow
-	url = git@github.com:zowe/zlux-workflow.git
+	url = git@github.com:1000TurquoisePogs/zlux-workflow.git
 [submodule "sample-angular-app"]
 	path = sample-angular-app
-	url = git@github.com:zowe/sample-app.git
+	url = git@github.com:1000TurquoisePogs/sample-app.git
 [submodule "sample-react-app"]
 	path = sample-react-app
-	url = git@github.com:zowe/react-sample-app.git
+	url = git@github.com:1000TurquoisePogs/react-sample-app.git
 [submodule "sample-iframe-app"]
 	path = sample-iframe-app
 	url = git@github.com:1000TurquoisePogs/sample-iframe-app.git
