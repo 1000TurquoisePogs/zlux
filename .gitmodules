@@ -36,10 +36,10 @@
 	url = git@github.com:1000TurquoisePogs/zlux-workflow.git
 [submodule "sample-angular-app"]
 	path = sample-angular-app
-	url = git@github.com:1000TurquoisePogs/sample-app.git
+	url = git@github.com:1000TurquoisePogs/sample-angular-app.git
 [submodule "sample-react-app"]
 	path = sample-react-app
-	url = git@github.com:1000TurquoisePogs/react-sample-app.git
+	url = git@github.com:1000TurquoisePogs/sample-react-app.git
 [submodule "sample-iframe-app"]
 	path = sample-iframe-app
 	url = git@github.com:1000TurquoisePogs/sample-iframe-app.git
