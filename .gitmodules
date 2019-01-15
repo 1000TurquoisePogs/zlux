@@ -52,3 +52,9 @@
 [submodule "sample-angular-app"]
 	path = sample-angular-app
 	url = git@github.com:zowe/sample-angular-app.git
+[submodule "zlux-app-server"]
+  path = zlux-app-server
+	url = git@github.com:zowe/zlux-app-server.git
+[submodule "zlux-server-framework"]
+  path = zlux-server-framework
+  url = git@github.com:zowe/zlux-server-framework.git
