@@ -1,5 +1,5 @@
 [submodule "zlux-example-server"]
-	path = zlux-example-server
+	path = zlux-app-server
 	url = git@github.com:zowe/zlux-example-server.git
 [submodule "tn3270-ng2"]
 	path = tn3270-ng2
@@ -17,7 +17,7 @@
 	path = zlux-platform
 	url = git@github.com:zowe/zlux-platform.git
 [submodule "zlux-proxy-server"]
-	path = zlux-proxy-server
+	path = zlux-server-framework
 	url = git@github.com:zowe/zlux-proxy-server.git
 [submodule "zlux-shared"]
 	path = zlux-shared
