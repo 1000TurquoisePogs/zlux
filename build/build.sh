@@ -79,15 +79,16 @@ rm -rf .editor* */.editor* */*/.editor*
 rm -rf zlux-platform/base
 rm -rf zlux-server-framework/test
 #copy node_modules in before nuking package.jsons
-mkdir -p $PREFIX/lib/zowe/zlux
-cp -r zlux-app-manager $PREFIX/lib/zowe/zlux
-cp -r zlux-server-framework $PREFIX/lib/zowe/zlux
+mkdir -p $PREFIX/lib/zowe/app-server/share
+cp -r zlux-app-manager $PREFIX/lib/zowe/app-server/share
+cp -r zlux-server-framework $PREFIX/lib/zowe/app-server/share
 rm -rf zlux-app-manager zlux-server-framework
 rm -rf */package.json */*/package.json */*/*/package.json */*/*/*/package.json
 rm -f build/bin/*.bat
-cp build/bin/* $PREFIX/bin
 mkdir -p $PREFIX/etc
 cp -r build/etc/* $PREFIX/etc/
-cp -r . $PREFIX/lib/zowe/zlux
-rm -rf $PREFIX/lib/zowe/zlux/build
+cp -r . $PREFIX/lib/zowe/app-server/share
+rm -rf $PREFIX/lib/zowe/app-server/share/build
+cp $PREFIX/lib/zowe/app-server/share/zlux-app-server/bin/app-server.sh $PREFIX/bin/zowe-app-server
+cp $PREFIX/lib/zowe/app-server/share/zlux-app-server/bin/install-app.sh $PREFIX/bin/zowe-install-app
 exit 0

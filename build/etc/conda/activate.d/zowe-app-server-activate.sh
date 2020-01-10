@@ -7,4 +7,4 @@
 # 
 # Copyright Contributors to the Zowe Project.
 
-export MVD_DESKTOP_DIR=${CONDA_PREFIX}/lib/zowe/zlux/zlux-app-manager/virtual-desktop
+export MVD_DESKTOP_DIR=${CONDA_PREFIX}/lib/zowe/app-server/zlux-app-manager/virtual-desktop
