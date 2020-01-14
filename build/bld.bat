@@ -107,6 +107,8 @@ if not exist %PREFIX%\bin mkdir %PREFIX%\bin
 if not exist %PREFIX%\etc mkdir %PREFIX%\etc
 rd /S /Q %SRC_DIR%\temp_nonsense
 robocopy %SRC_DIR%\zlux-app-server\bin %PREFIX%\bin install-app.bat app-server.bat /NS /NC /NFL /NDL /NP /NJH /NJS
+rename %PREFIX%\bin\app-server.bat %PREFIX%\bin\zowe-app-server.bat
+rename %PREFIX%\bin\install-app.bat %PREFIX%\bin\zowe-install-app.bat
 robocopy %SRC_DIR%\build\etc %PREFIX%\etc * /E /NS /NC /NFL /NDL /NP /NJH /NJS
 robocopy %SRC_DIR% %PREFIX%\lib\zowe\app-server\share * /E /NS /NC /NFL /NDL /NP /NJH /NJS
 exit 0
