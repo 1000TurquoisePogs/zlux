@@ -7,4 +7,4 @@ REM SPDX-License-Identifier: EPL-2.0
 REM 
 REM Copyright Contributors to the Zowe Project.
 
-set MVD_DESKTOP_DIR=%CONDA_PREFIX%\lib\zowe\app-server\share\zlux-app-manager\virtual-desktop
+set MVD_DESKTOP_DIR=%CONDA_PREFIX%\share\zowe\app-server\zlux-app-manager\virtual-desktop

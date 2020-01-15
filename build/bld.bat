@@ -80,7 +80,7 @@ del /F /S /Q .gitignore .gitattributes .gitmodules
 del /F /S /Q .npm*
 del /F /S /Q Jenkinsfile
 del /F /S /Q settings.gradle
-if not exist %PREFIX%\lib\zowe\app-server\share mkdir %PREFIX%\lib\zowe\app-server\share
+if not exist %PREFIX%\share\zowe\app-server mkdir %PREFIX%\share\zowe\app-server
 CALL :deletejunk %SRC_DIR%\zlux-app-manager\bootstrap
 CALL :deletejunk %SRC_DIR%\zlux-app-manager\system-apps
 del /Q %SRC_DIR%\zlux-app-manager\virtual-desktop\package.json
@@ -92,10 +92,10 @@ del /Q %SRC_DIR%\zlux-app-manager\virtual-desktop\webpack.config.js
 del /Q %SRC_DIR%\zlux-app-manager\virtual-desktop\webpack.externals.js
 robocopy %SRC_DIR%\temp_nonsense %SRC_DIR%\zlux-app-manager\virtual-desktop\node_modules\.cache /purge /NS /NC /NFL /NDL /NP /NJH /NJS
 rmdir %SRC_DIR%\zlux-app-manager\virtual-desktop\node_modules\.cache
-mkdir %PREFIX%\lib\zowe\app-server\share\zlux-app-manager
-robocopy %SRC_DIR%\zlux-app-manager %PREFIX%\lib\zowe\app-server\share\zlux-app-manager /E /NS /NC /NFL /NDL /NP /NJH /NJS
-mkdir %PREFIX%\lib\zowe\app-server\share\zlux-server-framework
-robocopy %SRC_DIR%\zlux-server-framework %PREFIX%\lib\zowe\app-server\share\zlux-server-framework /E /NS /NC /NFL /NDL /NP /NJH /NJS
+mkdir %PREFIX%\share\zowe\app-server\zlux-app-manager
+robocopy %SRC_DIR%\zlux-app-manager %PREFIX%\share\zowe\app-server\zlux-app-manager /E /NS /NC /NFL /NDL /NP /NJH /NJS
+mkdir %PREFIX%\share\zowe\app-server\zlux-server-framework
+robocopy %SRC_DIR%\zlux-server-framework %PREFIX%\share\zowe\app-server\zlux-server-framework /E /NS /NC /NFL /NDL /NP /NJH /NJS
 robocopy %SRC_DIR%\temp_nonsense %SRC_DIR%\zlux-app-manager /purge /NS /NC /NFL /NDL /NP /NJH /NJS
 rmdir %SRC_DIR%\zlux-app-manager
 robocopy %SRC_DIR%\temp_nonsense %SRC_DIR%\zlux-server-framework /purge /NS /NC /NFL /NDL /NP /NJH /NJS
@@ -110,7 +110,7 @@ robocopy %SRC_DIR%\zlux-app-server\bin %PREFIX%\bin install-app.bat app-server.b
 rename %PREFIX%\bin\app-server.bat %PREFIX%\bin\zowe-app-server.bat
 rename %PREFIX%\bin\install-app.bat %PREFIX%\bin\zowe-install-app.bat
 robocopy %SRC_DIR%\build\etc %PREFIX%\etc * /E /NS /NC /NFL /NDL /NP /NJH /NJS
-robocopy %SRC_DIR% %PREFIX%\lib\zowe\app-server\share * /E /NS /NC /NFL /NDL /NP /NJH /NJS
+robocopy %SRC_DIR% %PREFIX%\share\zowe\app-server * /E /NS /NC /NFL /NDL /NP /NJH /NJS
 exit 0
 
 REM combination of del being limited and conda being rediculous
